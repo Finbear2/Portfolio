@@ -9,16 +9,12 @@
 
         body,
         html {
-
             height: 100%;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, #cea3f0, #f6acae );
-
         }
-        
-        nav {
 
+        nav {
             display: flex;
             padding-left: 0px;
             padding-right: 0px;
@@ -26,11 +22,9 @@
             border-bottom: 3px solid black;
             align-items: center;
             background-color: white;
-
         }
-        
-        .Container {
 
+        .Container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -38,30 +32,47 @@
             width: fit-content;
             margin: 0 auto;
             text-align: center;
-
         }
-        
+
         * {
-
             text-align: left;
-            
         }
-        
-        .Title {
 
+        .Title {
             color: black;
             font-size: 64px;
             padding-top: 25%;
             padding-bottom: 25%;
             font-weight: 400;
-
         }
 
         .Logo-Text {
-
             color: black;
             padding-left: 12px;
+        }
 
+        .Gradient-Background {
+            background: linear-gradient(to right, #cea3f0, #f6acae );
+            cursor: none;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cursor-circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, transform 0.1s ease-out;
+            z-index: 0;
+        }
+
+        .Gradient-Background:hover .cursor-circle {
+            opacity: 1;
+            transform: scale(1.5); /* Scale on hover */
         }
 
     </style>
@@ -70,20 +81,39 @@
 <body>
 
     <nav id="Desktop-Nav">
-
         <div class="Logo-Text"> <h1>FS</h1> </div>
-
     </nav>
 
-    <div class="Container">
+    <div class="Gradient-Background">
+        <div class="cursor-circle"></div>
 
-        <div class="Title">
-            
-            <h1>Finley<br>Stoner</h1>
-
+        <div class="Container">
+            <div class="Title">
+                <h1>Finley<br>Stoner</h1>
+            </div>
         </div>
-
     </div>
+
+    <script>
+        const circle = document.querySelector(".cursor-circle");
+
+        document.addEventListener("mousemove", (event) => {
+            
+            circle.style.transform = `translate(${event.clientX - 50}px, ${event.clientY - 50}px)`; // Center the circle
+        });
+
+        document.querySelector('.Gradient-Background').addEventListener('mouseenter', () => {
+            
+            circle.style.transition = "transform 0.2s ease-out";
+        });
+
+        document.querySelector('.Gradient-Background').addEventListener('mouseleave', () => {
+            
+            circle.style.transition = "transform 0.1s ease-out, opacity 0.3s ease-in-out";
+            circle.style.transform = "scale(1)";
+        });
+
+    </script>
 
 </body>
 
