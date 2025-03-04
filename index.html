@@ -6,78 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Box</title>
     <style>
+
         body,
         html {
+
             height: 100%;
-            /* Full height for the page */
             margin: 0;
-            /* Remove default margins */
             font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #cea3f0, #f6acae );
+
         }
         
         nav {
-            padding-bottom: 20px;
+
+            display: flex;
             padding-left: 0px;
             padding-right: 0px;
-            height: 20px;
-            border-bottom: 2px solid black;
+            height: 30px;
+            border-bottom: 3px solid black;
             align-items: center;
+            background-color: white;
+
         }
-        /* Container that will be centered */
         
-        .container {
+        .Container {
+
             display: flex;
-            /* Flexbox for the container */
             justify-content: center;
-            /* Horizontally center */
             align-items: center;
-            /* Vertically center */
-            height: 300px;
-            /* Set a specific height */
-            width: 80%;
-            /* Width of the container */
+            height: fit-content;
+            width: fit-content;
             margin: 0 auto;
-            /* Center container horizontally */
-            border: 2px solid #000;
-            /* Just for visual purposes */
             text-align: center;
+
         }
-        /* Content outside the container */
         
-        .outside {
+        * {
+
             text-align: left;
-            /* Left align text for content outside the container */
+            
         }
         
         .Title {
+
             color: black;
-            font-size: large;
+            font-size: 64px;
+            padding-top: 25%;
+            padding-bottom: 25%;
+            font-weight: 400;
+
         }
+
+        .Logo-Text {
+
+            color: black;
+            padding-left: 12px;
+
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="outside">
+    <nav id="Desktop-Nav">
 
-        <nav id="Desktop-Nav">
+        <div class="Logo-Text"> <h1>FS</h1> </div>
 
-            <div class="Title"> Finley Stoner </div>
+    </nav>
 
-        </nav>
+    <div class="Container">
 
-    </div>
+        <div class="Title">
+            
+            <h1>Finley<br>Stoner</h1>
 
-    <div class="container">
-        <div>
-            <h2>This is the centered box</h2>
-            <p>This content is centered inside the container.</p>
         </div>
-    </div>
 
-    <div class="outside">
-        <h1>More content outside the box</h1>
-        <p>This content will still not be centered.</p>
     </div>
 
 </body>
