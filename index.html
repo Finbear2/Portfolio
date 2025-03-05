@@ -9,9 +9,12 @@
 
         body,
         html {
+
             height: 100%;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+
         }
 
         nav {
@@ -24,7 +27,8 @@
             background-color: white;
         }
 
-        .Container {
+        .Title-Container {
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,6 +36,8 @@
             width: fit-content;
             margin: 0 auto;
             text-align: center;
+            transition: transorm 0.1 ease-in-out;
+
         }
 
         * {
@@ -39,11 +45,12 @@
         }
 
         .Title {
+
             color: black;
             font-size: 64px;
-            padding-top: 25%;
-            padding-bottom: 25%;
+            padding: 0%;
             font-weight: 400;
+
         }
 
         .Logo-Text {
@@ -53,7 +60,7 @@
 
         .Gradient-Background {
             background: linear-gradient(to right, #cea3f0, #f6acae );
-            cursor: none;
+            
             overflow: hidden;
             position: relative;
         }
@@ -71,8 +78,57 @@
         }
 
         .Gradient-Background:hover .cursor-circle {
+
             opacity: 1;
-            transform: scale(1.5); /* Scale on hover */
+            transform: scale(1.5);
+            
+        }
+
+        .Collum {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40%;
+            padding-bottom: 40%;
+
+        }
+
+        .subtitle-text {
+
+            font-size: small;
+            font-weight: lighter;
+            color: black;
+
+        }
+
+        .Title h1, .subtitle-text p {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .Small-Title {
+
+            color: black;
+            font-size: 32px;
+            padding: 0%;
+            font-weight: 200;
+
+        }
+
+        .Container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+
         }
 
     </style>
@@ -85,32 +141,72 @@
     </nav>
 
     <div class="Gradient-Background">
+
         <div class="cursor-circle"></div>
 
-        <div class="Container">
-            <div class="Title">
-                <h1>Finley<br>Stoner</h1>
+        <div class="Title-Container">
+
+            <div class="Collum">
+
+                <div class="Title">
+
+                    <h1>Finley<br>Stoner</h1>
+
+                </div>
+
+                <div class="subtitle-text">
+
+                    <p>United Kindom</p>
+
+                </div>
+
             </div>
+
         </div>
+
+    </div>
+
+    <div class="Container">
+
+        <div class="Small-Title">
+
+            <p>My Tools</p>
+
+        </div>
+
     </div>
 
     <script>
-        const circle = document.querySelector(".cursor-circle");
 
-        document.addEventListener("mousemove", (event) => {
-            
-            circle.style.transform = `translate(${event.clientX - 50}px, ${event.clientY - 50}px)`; // Center the circle
+        const circle = document.querySelector(".cursor-circle");
+        const Title_Container = document.querySelector(".Title-Container")
+        const Background = document.querySelector(".Gradient-Background")
+
+        Background.addEventListener("mousemove", (event) => {
+
+            const { clientX, clientY } = event;
+            const { width, height, left, top } = Background.getBoundingClientRect()
+
+            const moveX = (( clientX - left ) / width - 0.5 ) * 30;
+            const moveY = (( clientY - top ) / height - 0.5) * 20;
+
+            Title_Container.style.transform = `translate( ${moveX}px, ${moveY}px )`;
+            circle.style.transform = `translate(${event.clientX - 50}px, ${event.clientY - 75}px)`;
+
         });
 
         document.querySelector('.Gradient-Background').addEventListener('mouseenter', () => {
             
-            circle.style.transition = "transform 0.2s ease-out";
+            circle.style.transition = "transform 0.3s ease-out, opacity 0.3s ease-in-out";
+            circle.style.transform = "scale(1)";
+
         });
 
         document.querySelector('.Gradient-Background').addEventListener('mouseleave', () => {
             
-            circle.style.transition = "transform 0.1s ease-out, opacity 0.3s ease-in-out";
+            circle.style.transition = "transform 0.3s ease-out, opacity 0.3s ease-in-out";
             circle.style.transform = "scale(1)";
+
         });
 
     </script>
