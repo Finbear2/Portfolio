@@ -2,10 +2,33 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home - Finley Stoner</title>
+    <title>Finley Stoner - Web Developer Portfolio | Front-End, Back-End, Python Apps & Game Development</title>
+    <meta name="description" content="Finley Stoner's web developer portfolio showcasing front-end, back-end, UI/UX design, Python app development, and interactive web applications.">
+
+    <script type="application/ld+json">
+
+        {
+
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Finley Stoner",
+          "jobTitle": "Web Developer",
+          "url": "finbear.dev",
+
+          "sameAs": [
+            "https://github.com/Finbear2",
+            "https://fin2.itch.io/"
+          ],
+
+          "description": "Finley Stoner's web developer portfolio, featuring projects in front-end development, UI/UX design, Python app development, backend development, and game development.",
+
+        }
+
+    </script>
 
     <style>
 
@@ -32,6 +55,15 @@
         h1, h2, h3, h4, h5, h6, p {
 
             color: rgb(60, 60, 60);
+
+        }
+
+        @font-face {
+
+            font-family: 'MyFont';
+            src: url('MyFont.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
 
         }
 
@@ -159,6 +191,39 @@
 
         }
 
+        .White-Container {
+
+            border-radius: 10px;
+            background-color: white;
+            font-family: 'MyFont', sans-serif;
+            font-size: 40px;
+            width: 600px;
+            height: 100px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;   
+            translate: 0px 48px;
+
+        }
+
+        .White-Container > * {
+
+            display: inline-block;
+            translate: 0px -52.5px;
+
+        }
+
+        .triangle {
+
+            width: 50px;
+            height: 50px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid white; /* Change color here */
+
+        }
+
+
         @media screen and (max-width: 768px) { /* Targets screens smaller than 768px (mobile) */
 
             .Title {
@@ -182,8 +247,8 @@
 
             .Title-Container {
                     
-                    padding-top: 36px;
-                    padding-bottom: 36px;
+                padding-top: 36px;
+                padding-bottom: 36px;
 
             }
 
@@ -211,7 +276,9 @@
 
         <div class="cursor-circle"></div>
 
-            <div class="Title-Container">
+        <div class="Title-Container">
+
+            <div class="Collum">
 
                 <div class="Collum">
 
@@ -227,7 +294,7 @@
 
                         </div>
 
-                        <img src="Test-Pic.jpeg" alt="Picture Of Me... Hi!" class="Profile-Pic">
+                        <img src="Test-Pic.jpeg" alt="Picture Of Finley Stoner" class="Profile-Pic">
 
                     </div>
 
@@ -239,7 +306,15 @@
 
                 </div>
 
+                <div class="White-Container">
+
+                    <p>Hi! I'm Finley! I'm a professional web developer, game creator and a ux and ui designer.</p>
+
+                </div>
+
             </div>
+
+        </div>
 
     </div>
 
