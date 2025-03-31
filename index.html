@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Box</title>
+
+    <title>Home - Finley Stoner</title>
+
     <style>
 
         body,
@@ -25,6 +27,12 @@
             border-bottom: 3px solid black;
             align-items: center;
             background-color: white;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+
+            color: rgb(60, 60, 60);
+
         }
 
         .Title-Container {
@@ -48,7 +56,6 @@
 
         .Title {
 
-            color: black;
             font-size: 64px;
             padding: 0%;
             font-weight: 400;
@@ -56,27 +63,32 @@
         }
 
         .Logo-Text {
-            color: black;
+        
             padding-left: 12px;
+
         }
 
         .Gradient-Background {
+
             background: linear-gradient(to right, #cea3f0, #f6acae );
             
             overflow: hidden;
             position: relative;
+
         }
 
         .cursor-circle {
+
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 0px;
+            height: 0px;
             background-color: white;
             border-radius: 50%;
             pointer-events: none;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out, transform 0.1s ease-out;
+            transition: opacity 0.3s ease-in-out, transform 0.1s ease-out, width 0.3s ease-out, height 0.3s ease-out;
             z-index: 0;
+
         }
 
         .Gradient-Background:hover .cursor-circle {
@@ -107,7 +119,6 @@
 
             font-size: small;
             font-weight: lighter;
-            color: rgb(61, 61, 61);
 
         }
 
@@ -121,7 +132,6 @@
 
         .Small-Title {
 
-            color: black;
             font-size: 32px;
             padding: 0%;
             font-weight: 25;
@@ -221,7 +231,7 @@
 
                     </div>
 
-                    <div class="subtitle-text">
+                    <div class="subtitle-text"
 
                         <p>United Kindom</p>
 
@@ -278,17 +288,26 @@
 
             }
 
+            function setCircleSize(size) {
+
+                circle.style.width = `${size}px`;
+                circle.style.height = `${size}px`;
+
+            }
+
             document.querySelector('.Gradient-Background').addEventListener('mouseenter', () => {
                 
-                circle.style.transition = "transform 0.3s ease-out, opacity 0.3s ease-in-out";
-                circle.style.transform = "scale(1)";
+                circle.style.opacity = "1";
+                
+                setCircleSize(100);
 
             });
 
             document.querySelector('.Gradient-Background').addEventListener('mouseleave', () => {
                 
-                circle.style.transition = "transform 0.3s ease-out, opacity 0.3s ease-in-out";
-                circle.style.transform = "scale(1)";
+                circle.style.opacity = "0";
+
+                setCircleSize(0);
 
             });
 
