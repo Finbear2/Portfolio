@@ -21,392 +21,75 @@
               "https://github.com/Finbear2",
               "https://fin2.itch.io/"
             ],
-            "description": "Finley Stoner's web developer portfolio, featuring projects in front-end development, UI/UX design, Python app development, back-end development, and game development."
+            "description": "Finley Stoner's web developer portfolio featuring their UI/UX design, apps and games that they've made."
         }   
 
     </script>
 
+    <link href="https://fonts.googleapis.com/css?family=Oi|Space+Grotesk|Syne:bold" rel="stylesheet">
+
     <style>
 
-        body,
-        html {
+        html, body {
 
             height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
+            width: 100%;
 
-        }
-
-        nav {
-            display: flex;
-            padding-left: 0px;
-            padding-right: 0px;
-            height: 30px;
-            border-bottom: 3px solid black;
-            align-items: center;
-            background-color: white;
-        }
-
-        h1, h2, h3, h4, h5, h6, p {
-
-            color: rgb(60, 60, 60);
-
-        }
-
-        @font-face {
-
-            font-family: 'MyFont';
-            src: url('MyFont.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        .Title-Container {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: fit-content;
-            width: fit-content;
-            margin: 0 auto;
             text-align: center;
-            transition: 0.05s ease-in-out;
-            padding-top: 100px;
-            padding-bottom: 100px;
 
         }
 
-        * {
-            text-align: left;
-        }
+        body {
 
-        .Title {
-
-            font-size: 64px;
-            padding: 0%;
-            font-weight: 400;
+            background: linear-gradient(to bottom, #e2ffff, #c1faff);
 
         }
 
-        .Logo-Text {
-        
-            padding-left: 12px;
+        h1, h2, h3, h4, h5, h6 {
+
+            margin: 0;
+            padding: 0;
+
+            font-family: 'Oi', serif;
+            line-height: 1;
+        }
+
+        p {
+
+            margin: 0;
+            padding: 0;
 
         }
 
-        .Gradient-Background {
-
-            background: linear-gradient(to right, #cea3f0, #f6acae );
-            
-            overflow: hidden;
-            position: relative;
+        .center {
 
             display: flex;
-
             justify-content: center;
-            align-items: center;
 
         }
 
-        .cursor-circle {
-
-            position: absolute;
-            width: 0px;
-            height: 0px;
-            background-color: white;
-            border-radius: 50%;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out, transform 0.1s ease-out, width 0.3s ease-out, height 0.3s ease-out;
-            z-index: 0;
-
-        }
-
-        .Gradient-Background:hover .cursor-circle {
-
-            opacity: 1;
-            transform: scale(1.5);
-            
-        }
-
-        .Column {
+        .column {
 
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
 
         }
-
-        .Row {
-
-            display: flex;
-            gap: 20px;
-            align-items: center;
-
-        }
-
-        .subtitle-text {
-
-            font-size: small;
-            font-weight: lighter;
-
-        }
-
-        .Title h1, .subtitle-text p {
-
-            margin: 0;
-            padding: 0;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-
-        }
-
-        .Small-Title {
-
-            font-size: 32px;
-            padding: 0%;
-            font-weight: 25;
-
-        }
-
-        .Container {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: fit-content;
-            width: fit-content;
-            margin: 0 auto;
-            text-align: center;
-
-        }
-
-        .Profile-Pic {
-
-            width: 300px;
-            height: 300px;
-            border-radius: 20%;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
-        }
-
-        .White-Container {
-
-            border-radius: 10px;
-            background-color: white;
-            font-family: 'MyFont', sans-serif;
-            font-size: 40px;
-            width: 600px;
-            height: 100px;
-            padding: 20px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-            text-align: center;   
-            translate: 0px 48px;
-
-        }
-
-        .White-Container > * {
-
-            display: inline-block;
-            translate: 0px -52.5px;
-
-        }
-
-        .triangle {
-
-            width: 50px;
-            height: 50px;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid white; /* Change color here */
-
-        }
-
-
-        @media screen and (max-width: 764px) { /* Targets screens smaller than 768px (mobile) */
-
-            .Title {
-
-                font-size: 24px;
-
-            }
-
-            .subtitle-text {
-
-                font-size: 12px;
-
-            }
-
-            .Profile-Pic {
-
-                width: 100px;
-                height: 100px;
-
-            }
-
-            .Title-Container {
-                    
-                padding-top: 36px;
-                padding-bottom: 45px;
-
-            }
-
-            .Small-Title {
-
-                font-size: 24px;
-                padding: 0%;
-                font-weight: 15;
-
-            }
-
-            .White-Container {
-
-                font-size: 20px;
-                width: 300px;
-                height: 50px;
-                padding: 10px;
-                translate: 0px 20px;
-
-            }
-
-            .White-Container > * {
-
-                display: inline-block;
-                translate: 0px -25px;
-
-            }
-
-        }
-
 
     </style>
 </head>
 
 <body>
 
-    <nav id="Desktop-Nav">
-        <div class="Logo-Text"> <h1>FS</h1> </div>
-    </nav>
+    <div class="center column" style="padding-top: 50px; padding-bottom: 10px;">
 
-    <div class="Gradient-Background">
+        <p style="font-size: 50px; font-family: 'Syne', serif; font-weight: bold;">Hi! I'm</p>
 
-        <div class="cursor-circle"></div>
+        <h1 style="font-size: 150px; padding-top: 25px;">Finley<br>Stoner</h1>
 
-        <div class="Title-Container">
-
-            <div class="Column">
-
-                <div class="Column">
-
-                    <div class="Row">
-
-                        <div class="Column">
-
-                            <div class="Title">
-
-                                <h1>Finley<br>Stoner</h1>
-
-                            </div>
-
-                        </div>
-
-                        <img src="Test-Pic.jpeg" alt="Picture Of Finley Stoner" class="Profile-Pic">
-
-                    </div>
-
-                    <div class="subtitle-text">
-                    
-                        <p>United Kingdom</p>
-                    
-                    </div>
-
-                </div>
-
-                <div class="White-Container">
-
-                    <p>Hi! I'm Finley! I'm a professional web developer, game creator, and a UX and UI designer.</p>
-
-                </div>
-
-            </div>
-
-        </div>
+        <p style="font-size: 25px; font-family: 'Syne', serif; font-weight: bold; padding-top: 0px; text-align: center;">An app developer and UI/UX designer trying<br>to make tech fun again :)</p>
 
     </div>
-
-    <div class="Container">
-
-        <div class="Small-Title">
-
-            <p>My Tools</p>
-
-        </div>
-
-    </div>
-
-    <script>
-
-        const circle = document.querySelector(".cursor-circle");
-        const Title_Container = document.querySelector(".Title-Container")
-        const Background = document.querySelector(".Gradient-Background")
-
-        if (!/Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)) {
-
-            let mouseX = 0, mouseY = 0;
-            let isMoving = false;
-
-            Background.addEventListener("mousemove", (event) => {
-
-                const { clientX, clientY } = event;
-                const { width, height, left, top } = Background.getBoundingClientRect();
-
-                mouseX = ((clientX - left) / width - 0.5) * 30;
-                mouseY = ((clientY - top) / height - 0.5) * 20;
-
-                if (!isMoving) {
-                    isMoving = true;
-                    requestAnimationFrame(updateTitleContainer);
-                }
-
-                circle.style.transform = `translate(${clientX - 920}px, ${clientY - 350}px)`;
-
-            });
-
-            function updateTitleContainer() {
-
-                Title_Container.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
-                isMoving = false;
-
-            }
-
-            function setCircleSize(size) {
-
-                circle.style.width = `${size}px`;
-                circle.style.height = `${size}px`;
-
-            }
-
-            document.querySelector('.Gradient-Background').addEventListener('mouseenter', () => {
-                
-                circle.style.opacity = "1";
-                
-                setCircleSize(100);
-
-            });
-
-            document.querySelector('.Gradient-Background').addEventListener('mouseleave', () => {
-                
-                circle.style.opacity = "0";
-
-                setCircleSize(0);
-
-            });
-
-        }
-
-    </script>
 
 </body>
 
