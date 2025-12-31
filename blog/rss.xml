@@ -7,6 +7,11 @@
     <title>Fin's Corner</title>
     <link>https://finbear.dev/blog/</link>
     <description>A blog about coding, design, and projects.</description>
+    <image>
+      <url>https://finbear.dev/blog/assets/logo.png</url>
+      <title>Fin's Corner</title>
+      <link>https://finbear.dev/blog/</link>
+    </image>
     <language>en-gb</language>
     <atom:link href="https://finbear.dev/blog/rss.xml" rel="self" type="application/rss+xml"/>
 
