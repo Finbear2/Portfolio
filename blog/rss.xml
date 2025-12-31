@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Fin's Corner</title>
+    <link>https://finbear.dev/blog/</link>
+    <description>A blog about coding, design, and projects.</description>
+    <language>en-gb</language>
+    <atom:link href="https://finbear.dev/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Ram Price Hike</title>
+      <link>https://finbear.dev/blog/30-12-2025.html</link>
+      <guid isPermaLink="true">https://finbear.dev/blog/30-12-2025.html</guid>
+      <pubDate>Tue, 30 Dec 2025 10:00:00 GMT</pubDate>
+
+      <!-- Short preview -->
+      <description>
+        <![CDATA[
+        A blog post about ram prices being more expensive than blood because of the economy.
+        ]]>
+      </description>
+
+      <!-- Full post content -->
+      <content:encoded>
+        <![CDATA[
+        <p style="font-size: 18px;">
+            <span style="font-size: 32px;"><b>Maingear has started selling bring-your-own-RAM PCs because this world values RAM more than human blood.</b></span><br/><br/>
+
+            According to the media, AI companies are buying up vast amounts of RAM so they shove chatGPT into your kettle and eventually charge you a monthly fee.<br/><br/>
+
+            RAM now costs more than a 5070, more than a newborn and more than blood by weight. The substance that is keeping all living things alive is less expensive
+            than computer memory by weight. It’s probably more expensive than human memory as well but my search history is already concerning enough trying to research how much
+            blood costs.<br/><br/>
+
+            The funny thing is, this all because of an unstable bubble that is about pop.<br/><br/>
+
+            For now, buying ram is worse than investing in a meme coin… somehow<br/><br/>
+        </p>
+        ]]>
+      </content:encoded>
+    </item>
+
+  </channel>
+</rss>
