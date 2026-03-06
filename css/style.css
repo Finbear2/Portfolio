@@ -29,13 +29,18 @@ button {
     font-weight: 400;
     padding: 5px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 button:hover {
-    border-radius: 5px;
+    background-color: #76aaff;
+    padding: 7px;
+    box-shadow: 7px 7px;
 }
 
 button:active {
+    background-color: #4167a3;
+    transition: 0.05s;
     box-shadow: none;
     transform: translate(5px, 5px);
 }
@@ -51,15 +56,20 @@ button:active {
     font-weight: 400;
     padding: 5px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .button:hover {
-    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 7px 7px;
+    background-color: #dbff77;
 }
 
 .button:active {
+    transition: 0.05s;
     box-shadow: none;
     transform: translate(5px, 5px);
+    background-color: #9bbf39;
 }
 
 .container {
