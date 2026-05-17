@@ -1,103 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <title>Fin's Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Finley Stoner's Portfolio</title>
-
-        <meta name="description" content="Finley Stoner's portfolio showcasing their projects, Games and UI designs. Also containing their own blog.">
-
-        <script type="application/ld+json">
-
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "Finley Stoner",
-                "jobTitle": "Back-End Developer",
-                "url": "https://finbear.dev/",
-                "sameAs": [
-                "https://github.com/Finbear2",
-                "https://fin2.itch.io/"
-                ],
-                "description": "Finley Stoner's (back-end developer) portfolio featuring their UI/UX design and projects they've made"
-            }   
-
-        </script>
-
-        <link rel="stylesheet" href="css/style.css">
-        
     </head>
     <body>
-        
+        <div class="topbar">
+            <a class="topbar-button" href="https://memos.finbear.dev">Blog</a>
+        </div>
+
         <div class="center">
-            <div class="mobileColumn">
-                <div class="container" style="padding: 20px 40px; border-radius: 35px 0px 0px 35px; overflow-y: auto; height: calc(100vh - 100px); overflow-x: hidden; width: calc(100vw - 520px);">
-                    <h3 id="text" style="font-weight: 200; text-align: left; line-height: 1.5;">
-                        <b><i>WHAT I USE</i></b><br/>
-                        I'm a person with many hats you see<br/><br/>
-                        I code in <b>Python, Lua, C++ & Flutter</b>  <button id="expand1">▼</button> <br/>
-                        <span id="info1" hidden>
-                            <dd><i>I mainly use Python for tooling, Lua for Playdate,
-                            C++ for performance-critical stuff, and Flutter for apps.</i></dd>
-                        </span>
-                        I use <b>Figma, Penpot, VS Code, Github & Affinity</b>  <button id="expand2">▼</button> <br/>
-                        <span id="info2" hidden>
-                            <dd><i>I mainly use Penpot and for most UI design with Figma for material 3.
-                            Github to manage versions <br/>and Affinityfor graphic design.</i></dd>
-                        </span>
-                        I specilise in designing <b>Neobrutalism Designs & Mobile Apps</b>  <button id="expand3">▼</button> <br/>
-                        <span id="info3" hidden>
-                            <dd><i>Neobrutalism is my favourite due to it's fun aesthetic, an example of
-                            Neobrutalism is this website</i></dd>
-                        </span><br/><br/>
+            <div class="column" style="transform: translate(-260px, 240px);">
+                <h4 class="hero-h4" style="margin:0px; padding: 0px">Hi 👋</h4>
+                <p style="padding-top: 0px; margin-top: 0px;">
+                    I'm a 13 year old full stack developer building<br/>
+                    useful products before learning how to find a<br/>
+                    percentage change <span class="rainbow">:0</span>
+                </p>
+            </div>
+        </div>
 
-                        <b><i>PROJECTS</i></b><br/>
-                        In no particular order because I love all my projects equally... <b>wink wink</b><br/><br/>
-
-                        ◈ <a href="https://github.com/Finbear2/PdSteps-A-Playdate-step-counting-libary" class="button">PD Steps</a> -- A Step
-                        counting libary for the Playdate console and simple pedometer app. I used <b>Lua & VS Code</b><br/><br/>
-                        ◈ <a href="https://github.com/Finbear2/MP3_To_Code_For_ESP32" class="button">MP3 To Code For ESP32</a> -- A app
-                        made to convert a MP3 to code for the Pocket Mage. I used <b>Python & VS Code</b><br/><br/>
-                        ◈ <a href="https://fin2.itch.io/kimi-game" class="button">Kimi Game</a> -- A desktop petgame made for the
-                        playdate. Not the best but I made it when I was 11.<br/><br/><br/>
-
-                        <b><i>EXPERIENCE</i></b><br/>
-                        BAZINGA!<br/><br/>
-                        None... yeah... still working on that one :]
-                    </h3>
-                </div>
-                <div class="column">
-                    <div class="container"style="padding: 20px; border-radius: 0px 35px 0px 0px; outline: black solid 3px;">
-                        <div class="column">
-                            <div class="container" style="background-color: #bbff00;">
-                                <h1 style="text-align: center;">Finley<br/>Stoner</h1>
-                            </div>
-                            <h3 style="font-weight: 200;"><b><i>Hi!</i></b><br/>I'm a back end developer passionate<br/>in UI design based in England :]</p>
-                            <div class="row">
-                                <div class="center">
-                                    <a href="https://github.com/Finbear2" class="button">Github</a>
-                                    <a href="https://fin2.itch.io/" class="button">Itch.io</a>
-                                    <a href="/blog/index.html" class="button">Blog</a>
-                                    <a href="https://www.flickr.com/photos/204020384@N07/" class="button">Photos</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="center">
+            <div class="card" style="width: 500px; height: 260px; translate: 260px 60px;" id="name-card">
+                <div class="column" style="gap: 10px;">
+                    <div class="column">
+                        <h1 style="translate: 10px;">Hello</h1>
+                        <p style="translate: 20px -20px; font-weight: 500;">My Name Is</p>
                     </div>
-                    <div class="container" style="margin-top: 20px; padding: 20px; border-radius: 0px 0px 35px 0px; overflow: hidden; width: 320px; height: calc(100vh - 593px);">
-                        
+                    <div class="box" style="height: 118px; translate: 0px -10px;">
+                        <h1 style="translate: 330px -5px; font-family: 'DM Sans';">FIN</h1>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="js/index.js"></script>
+        <div class="center">
+            <div class="polaroid" id="hover-turn-1">
+                <div class="clipped">
+                    <div class="polaroid-insert">
+                        <div class="center">
+                            <img src="images/NotionPic.jpg" height="372px" style="translate: -20px -20px;"></img>
+                            <div class="pin"></div>
+                        </div>
+                    </div>
+                    <h4 style="position: relative; bottom: 45px; left: 15px;">Canto</h4>
+                </div>
+                <div class="bubble" style="border-radius: 10px 10px 0 10px; left: -20px;">
+                    <p class="hero-p">24/7 Shazam</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="center">
+            <div class="polaroid" id="hover-turn-2">
+                <div class="clipped">
+                    <div class="polaroid-insert">
+                        <div class="center">
+                            <img src="images/nullNotes.webp" height="372px" style="translate: 110px 0px;"></img>
+                            <div class="pin"></div>
+                        </div>
+                    </div>
+                    <h4 style="position: relative; bottom: 45px; left: 15px;">Null Notes</h4>
+                </div>
+                <div class="bubble" style="border-radius: 10px 10px 0 0; left: 90px">
+                    <p class="hero-p">Idea Linking Notes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="polaroid" id="hover-turn-3">
+                <div class="clipped">
+                    <div class="polaroid-insert">
+                        <div class="center">
+                            <img src="images/pdSteps.gif" height="372px" style="translate: 0px -50px;"></img>
+                            <div class="pin"></div>
+                        </div>
+                    </div>
+                    <h4 style="position: relative; bottom: 45px; left: 15px;">PDSteps</h4>
+                </div>
+                <div class="bubble" style="border-radius: 10px 10px 10px 0; left: 220px; top: -459px;">
+                    <p class="hero-p">Step Tracking For<br/>The Playdate</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center" style="translate: -375px -200px;">
+            <P>
+                I am the music man.<br/>
+                I come from down your way.
+            </P>
+        </div>
+
+        <div class="center" style="translate: 0px -230px;">
+            <div class="row"  style="gap: 86px;">
+                <h1>What<br/>can I<br/>play?</h1>
+                <div class="grid">
+                    <div class="row" style="gap: 15px;"><div class="bullet"></div><h4 class="hero-h4" style="margin: 0;">Python</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet" id="green"></div><h4 class="hero-h4" style="margin: 0;">Docker</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet" id="green"></div><h4 class="hero-h4" style="margin: 0;">HTML</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet"></div><h4 class="hero-h4" style="margin: 0;">Fusion</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet"></div><h4 class="hero-h4" style="margin: 0;">JavaScript</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet" id="green"></div><h4 class="hero-h4" style="margin: 0;">Figma</h4></div>
+
+                    <div class="row" style="gap: 15px;"><div class="bullet" id="green"></div><h4 class="hero-h4" style="margin: 0;">CSS</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet"></div><h4 class="hero-h4" style="margin: 0;">Nvim</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet"></div><h4 class="hero-h4" style="margin: 0;">Flutter</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet" id="green"></div><h4 class="hero-h4" style="margin: 0;">Penpot</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet" id="green"></div><h4 class="hero-h4" style="margin: 0;">C++</h4></div>
+                    <div class="row" style="gap: 15px;"><div class="bullet"></div><h4 class="hero-h4" style="margin: 0;">Linux</h4></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bar">
+            <h4 id="bar-text">
+                PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS
+            </h4>
+        </div>
+
+        <div class="center">
+            
+            <div class="project-folder">
+                
+                <div class="row" style="position: relative; top: -104px; left: -52px; gap: 5px;">
+                    <div class="project-tab" id="orange"><h4>Canto</h4></div>
+                    <div class="project-tab" id="greenSP"><h4>Null Notes</h4></div>
+                    <div class="project-tab" id="blue"><h4>PD Steps</h4></div>
+                    <div class="project-tab" id="peach"><h4>Toaty AI</h4></div>
+                </div>
+                <div class="column" style="translate: -20px -80px; gap: 40px;">
+                    <div class="column">
+                        <h1 id="title">FOLDER</h1>
+                        <a id="link" href="https://finbear.dev"></a>
+                        <h4 style="padding: 0; margin: 0;" id="description">Full Of Projects</h4>
+                        
+                        <p id="body">And Surprises</p>
+                    </div>
+                    <img src="images/NotionPic.jpg" id="image" width="600px"/>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="index.js"></script>
     </body>
 </html>
