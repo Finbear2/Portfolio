@@ -5,7 +5,7 @@
 - Smart LED Panels
   - Little panels you can attach to a wall
     - Did check with mum if it's okay to attach and she said yes :)
-  - £169.99 — [Govee brand](https://www.amazon.co.uk/YUNZII-B75-PRO-Mechanical-Pre-lubed/dp/B0H1WZTB84?crid=6YW68WQN7EZM&dib=eyJ2IjoiMSJ9.Aaf_ETBdGHUYOvCOOZ_xaTQPHs8J-pxMYNpWJJaKFZcuc848hkK9yC12ZTxYKrQlJFVzZtUO62W0KOpo38YeMH2g7fv974xYGDJwwJLdHDUkWUdhJd1gortCog6LiAiu.K6oKntpHvOacFaVBn4304vj0cEI7wLMFBwOYxW7wd2E&dib_tag=se&keywords=yunzzi&qid=1789154586&sprefix=yunzi%2Caps%2C133&sr=8-4&th=1)
+  - £169.99 — [Govee brand](https://www.amazon.co.uk/Govee-Panels-Hexagon-Lights-Control/dp/B09JFW47JG)
 - Mechanical Keyboard
   - Spent ages deciding the exact style
   - £62.39 — [Yunzzi B75 Pro](https://www.amazon.co.uk/YUNZII-B75-PRO-Mechanical-Pre-lubed/dp/B0H1WZTB84?crid=6YW68WQN7EZM&dib=eyJ2IjoiMSJ9.Aaf_ETBdGHUYOvCOOZ_xaTQPHs8J-pxMYNpWJJaKFZcuc848hkK9yC12ZTxYKrQlJFVzZtUO62W0KOpo38YeMH2g7fv974xYGDJwwJLdHDUkWUdhJd1gortCog6LiAiu.K6oKntpHvOacFaVBn4304vj0cEI7wLMFBwOYxW7wd2E&dib_tag=se&keywords=yunzzi&qid=1789154586&sprefix=yunzi%2Caps%2C133&sr=8-4&th=1)
