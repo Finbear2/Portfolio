@@ -4,43 +4,43 @@ let offsetY = 0;
 let index = 1;
 
 
-const SizeIcon= document.getElementById("Size-icon");
+const SizeIcon = document.getElementById("Size-icon");
 const SizePopup = document.getElementById("Size");
 const SizeSound = new Audio("sounds/tada.mp3");
-                
 
-const AestheticsIcon= document.getElementById("Aesthetics-icon");
+
+const AestheticsIcon = document.getElementById("Aesthetics-icon");
 const AestheticsPopup = document.getElementById("Aesthetics");
 const AestheticsSound = new Audio("sounds/tada.mp3");
-                
 
-const CustomerIcon= document.getElementById("Customer-icon");
+
+const CustomerIcon = document.getElementById("Customer-icon");
 const CustomerPopup = document.getElementById("Customer");
 const CustomerSound = new Audio("sounds/yougotmail.mp3");
-                
 
-const FunctionIcon= document.getElementById("Function-icon");
+
+const FunctionIcon = document.getElementById("Function-icon");
 const FunctionPopup = document.getElementById("Function");
 const FunctionSound = new Audio("sounds/tada.mp3");
-                
 
-const SafetyIcon= document.getElementById("Safety-icon");
+
+const SafetyIcon = document.getElementById("Safety-icon");
 const SafetyPopup = document.getElementById("Safety");
 const SafetySound = new Audio("sounds/error.mp3");
-                
 
-const EnvironmentIcon= document.getElementById("Environment-icon");
+
+const EnvironmentIcon = document.getElementById("Environment-icon");
 const EnvironmentPopup = document.getElementById("Environment");
 const EnvironmentSound = new Audio("sounds/error.mp3");
-                
 
-const CostIcon= document.getElementById("Cost-icon");
+
+const CostIcon = document.getElementById("Cost-icon");
 const CostPopup = document.getElementById("Cost");
 const CostSound = new Audio("sounds/exclamation.mp3");
-                
+
 
 const startupScreen = document.querySelector(".startup-screen");
-
+const startupSound = new Audio("sounds/startup.mp3");
 
 SizeIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(SizePopup).display === "none") {
@@ -54,7 +54,7 @@ SizeIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 AestheticsIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(AestheticsPopup).display === "none") {
@@ -68,7 +68,7 @@ AestheticsIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 CustomerIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(CustomerPopup).display === "none") {
@@ -82,7 +82,7 @@ CustomerIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 FunctionIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(FunctionPopup).display === "none") {
@@ -96,7 +96,7 @@ FunctionIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 SafetyIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(SafetyPopup).display === "none") {
@@ -110,7 +110,7 @@ SafetyIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 EnvironmentIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(EnvironmentPopup).display === "none") {
@@ -124,7 +124,7 @@ EnvironmentIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 CostIcon.addEventListener("dblclick", () => {
     if (getComputedStyle(CostPopup).display === "none") {
@@ -138,7 +138,7 @@ CostIcon.addEventListener("dblclick", () => {
         index++;
     }
 });
-                
+
 
 document.querySelectorAll('[aria-label="Close"]').forEach(button => {
     button.addEventListener("click", () => {
