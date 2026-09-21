@@ -1,0 +1,323 @@
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+    image-rendering: pixelated;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("images/bliss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    user-select: none;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-auto-flow: column;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    gap: 20px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.icon {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+}
+
+.post-content.expanded {
+    display: block;
+}
+
+.startup-screen {
+    transition: opacity 3s ease-out;
+}
+
+.startup-bar {
+    width: 500px;
+    height: 25px;
+    border: 2px solid grey;
+    position: relative;
+    overflow: hidden;
+}
+
+.moving-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 100%;
+    background: url("images/startup/barScroll.png") no-repeat center;
+    background-size: contain;
+    animation: slide 2s infinite steps(20);
+}
+
+@keyframes slide {
+    0% {
+        left: -60px;
+    }
+
+    100% {
+        left: calc(100% + 60px);
+    }
+}
+
+p {
+    font-size: medium;
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+.clippy {
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    width: 150px;
+}
+
+/* Xp Styling Edits */
+
+.title-bar {
+    cursor: grab;
+}
+
+.window {
+    user-select: none;
+    overflow: hidden;
+    resize: both;
+    min-width: 100px;
+    min-height: 25px;
+}
+
+.window-body {
+    overflow-y: scroll;
+}
+
+button[aria-label="Close"],
+button[aria-label="Minimize"],
+button[aria-label="Maximize"] {
+    cursor: pointer;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100vh;
+    image-rendering: pixelated;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("images/bliss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    user-select: none;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+    gap: 10px;
+    margin: 20px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+#recycle-bin,
+#network,
+#computer-icon,
+#clippy-icon,
+#documents-icon {
+    cursor: pointer;
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+.clippy {
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    width: 150px;
+}
+
+#clippy-text {
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    max-height: 300px;
+    overflow: scroll;
+    border: 2px solid rgba(68, 65, 56);
+}
+
+#posts {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: calc(100% - 45px);
+}
+
+#posts p,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    margin: 2px;
+}
+
+#posts hr {
+    margin: 10px;
+}
+
+#posts img {
+    margin: 7px;
+}
+
+.post-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-content.expanded {
+    display: block;
+}
+
+.startup-screen {
+    transition: opacity 3s ease-out;
+}
+
+.startup-bar {
+    width: 500px;
+    height: 25px;
+    border: 2px solid grey;
+    position: relative;
+    overflow: hidden;
+}
+
+.moving-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 100%;
+    background: url("images/startup/barScroll.png") no-repeat center;
+    background-size: contain;
+    animation: slide 2s infinite steps(20);
+}
+
+@keyframes slide {
+    0% {
+        left: -60px;
+    }
+
+    100% {
+        left: calc(100% + 60px);
+    }
+}
+
+/* Xp Styling Edits */
+
+.title-bar {
+    cursor: grab;
+}
+
+.window {
+    user-select: none;
+    overflow: hidden;
+    resize: both;
+    min-width: 200px;
+    min-height: 25px;
+}
+
+.window-body {
+    overflow-y: scroll;
+}
+
+button[aria-label="Close"],
+button[aria-label="Minimize"],
+button[aria-label="Maximize"] {
+    cursor: pointer;
+}
